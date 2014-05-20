@@ -1,0 +1,14 @@
+[color]
+	ui = true
+[alias]
+	st = status
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[user]
+	name = Nathan Scott
+	email = nscott@rjmetrics.com
+
+[push]
+	default = upstream #pushes only the local branch
