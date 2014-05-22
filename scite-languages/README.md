@@ -1,0 +1,1 @@
+This directory stores scite-specific language configurations. Drop them into /usr/share/scite
