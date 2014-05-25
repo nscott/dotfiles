@@ -8,7 +8,7 @@
 
 [user]
 	name = Nathan Scott
-	email = nscott@rjmetrics.com
+	email = natedscott@gmail.com
 
 [push]
 	default = upstream #pushes only the local branch
