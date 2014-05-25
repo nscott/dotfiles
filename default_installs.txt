@@ -1,0 +1,11 @@
+mkdir ~/bin
+
+sudo apt-get install ruby ruby-dev gcc python python-dev openjdk-7-jdk openjdk-7-jre emacs24 git nginx-full git-doc git-email ri tmux launchy conky python-gpgme gparted vlc filezilla p7zip texmaker qbittorrent synaptic ubuntu-restricted-extras
+
+wget https://raw.github.com/technomancy/leiningen/stable/bin/lein
+mv lein ~/bin/lein
+chmod +x ~/bin/lein
+~/bin/lein
+
+mkdir ~/.fonts
+cp ./fonts/* ~/.fonts
