@@ -17,8 +17,6 @@
 
 (set-face-attribute 'default nil :height 90)
 
-;; custom modules
-(add-to-list 'load-path "~/.emacs.d/el/package")
 (require 'package)
 (add-to-list 'package-archives
 	'("marmalade" . 
@@ -34,8 +32,7 @@
 			(require package)))
 	'(projectile flx flx-ido nrepl
 	  clojure-mode php-mode coffee-mode
-	  color-theme color-theme-solarized
-	  cider clojure-test-mode))
+	  color-theme cider clojure-test-mode))
 
 ; (load-theme 'solarized-dark t)
 (setq show-trailing-whitespace 1)
