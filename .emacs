@@ -49,7 +49,7 @@
 (flx-ido-mode 1)
 
 ;; For PHP to use only tabs
-(setq php-force-mode-pear 1)
+(setq php-mode-force-pear t)
 (define-key php-mode-map (kbd "TAB") 'self-insert-command)
 
 ; set up file format defaults
