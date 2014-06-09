@@ -81,5 +81,9 @@ export GPG_TTY=$(tty)
 
 source /etc/bash_completion.d/virtualenvwrapper
 
+for i in /etc/profile.d/*.sh; do
+	source $i
+done
+
 (fortune && echo -e "\n\nIt is currently" && date -d now +"%b %d%l:%m%P") | cowsay -e xO -T U
 cd /opt/code
