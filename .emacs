@@ -31,7 +31,7 @@
 			(require package)))
 	'(projectile flx flx-ido nrepl
 	  clojure-mode php-mode coffee-mode
-	  color-theme cider clojure-test-mode))
+	  color-theme cider web-mode))
 
 ; (load-theme 'solarized-dark t)
 (setq show-trailing-whitespace 1)
@@ -47,6 +47,8 @@
 (ido-mode 1)
 (ido-everywhere 1)
 (flx-ido-mode 1)
+
+(require 'web-mode)
 
 ;; For PHP to use only tabs
 (setq php-mode-force-pear t)
@@ -65,10 +67,18 @@
                 ("\\.[CH]\\'" . c++-mode)
                 ("\\.java\\'" . java-mode)
                 (".*[mM]akefile.*" . makefile-mode)
-                ("\\.html\\'" . sgml-mode)
-                ("\\.HTML\\'" . sgml-mode)
-                ("\\.htm\\'" . sgml-mode)
-                ("\\.HTM\\'" . sgml-mode)
+                ("\\.html\\'" . web-mode)
+                ("\\.HTML\\'" . web-mode)
+                ("\\.htm\\'" . web-mode)
+                ("\\.HTM\\'" . web-mode)
+                ("\\.html?\\'" . web-mode)
+                ("\\.phtml\\'" . web-mode)
+                ("\\.tpl\\.php\\'" . web-mode)
+                ("\\.[agj]sp\\'" . web-mode)
+                ("\\.as[cp]x\\'" . web-mode)
+                ("\\.erb\\'" . web-mode)
+                ("\\.mustache\\'" . web-mode)
+                ("\\.dhtml\\'" . web-mode)
                 ("\\.php\\'" . php-mode)
                 ("\.xemacs" . emacs-lisp-mode)
                 ("\.emacs"  . emacs-lisp-mode)
@@ -121,12 +131,13 @@
                 ) auto-mode-alist))
 
 ; tab jawns
-(setq default-tab-width 4)
-(setq tab-width 4)
-(setq c-basic-indent 4)
-; use real tabs
-;(setq indent-tabs-mode t)
-;(setq-default indent-tabs-mode 1)
+(setq default-tab-width 1)
+(setq tab-width 1)
+(setq c-basic-indent 1)
+
+(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
+
 (setq column-number-mode t)
 (setq line-number-mode t)
 ;(global-set-key (kbd "TAB") 'self-insert-command)
@@ -170,3 +181,9 @@
   (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
         ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
         (t (self-insert-command (or arg 1)))))
+
+;; == Java mode
+(add-hook 'java-mode-hook (lambda()
+                            (setq c-basic-offset 1
+                                  tab-width 1
+                                  indent-tabs-mode nil)))
