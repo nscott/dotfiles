@@ -67,3 +67,5 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+alias check_tabs="grep -r -l -P '\t' ./* | grep -v eclipse-bin | grep -v build"
+
