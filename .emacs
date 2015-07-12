@@ -29,7 +29,7 @@
 			(unless (package-installed-p package)
 					(package-install package))
 			(require package)))
-	'(projectile flx flx-ido nrepl
+	'(projectile flx flx-ido
 	  clojure-mode php-mode coffee-mode
 	  color-theme cider web-mode))
 
