@@ -69,3 +69,7 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 
 alias check_tabs="grep -r -l -P '\t' ./* | grep -v eclipse-bin | grep -v build"
 
+# http://lethalman.blogspot.com/2009/10/speeding-up-zsh-completion.html
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
