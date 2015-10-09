@@ -172,8 +172,8 @@ client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
 client.unfocused #073642 #073642 #93a1a1 #586e75
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
 
-bindsym $mod+Pause exec "i3lock -c 000000 -f"
+bindsym $mod+Pause exec "i3lock -c 004355 -f"
 
-exec gnome-sound-applet
-exec --no-startup-id "feh --bg-fill /home/local/ANT/ndscott/wallpaper/NMSConceptArtWallpap.png"
-exec --no-startup-id "xautolock -time 15 -locker `i3lock -c 000000 -f`"
+#exec gnome-sound-applet
+#exec --no-startup-id "feh --bg-fill /home/local/ANT/ndscott/wallpaper/NMSConceptArtWallpap.png"
+exec --no-startup-id "xautolock -time 15 -locker `i3lock -c 004355 -f`"
