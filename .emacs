@@ -31,7 +31,7 @@
 			(require package)))
 	'(projectile flx flx-ido
 	  clojure-mode php-mode coffee-mode
-	  color-theme cider web-mode))
+	  cider web-mode))
 
 ; (load-theme 'solarized-dark t)
 (setq show-trailing-whitespace 1)
@@ -167,7 +167,7 @@
 ; (global-set-key [backtab] '(indent-rigidly -4))
 
 ; regular directory to load from
-(let ((default-directory "~/.emacs.d/el/"))
+(let ((default-directory "~/.emacs.d/"))
       (normal-top-level-add-subdirs-to-load-path))
 
 ; replace yes and no with y and n
