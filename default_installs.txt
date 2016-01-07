@@ -1,7 +1,7 @@
 mkdir ~/bin
 
 # ruby-ronn required for i3blocks
-sudo apt-get install ruby ruby-dev gcc python python-dev emacs24 git git-doc git-email ri tmux zsh python-gpgme gparted vlc filezilla p7zip qbittorrent synaptic ubuntu-restricted-extras openjdk-8-jdk volumeicon-alsa xbacklight i3 ruby-ronn
+sudo apt-get install ruby ruby-dev gcc python python-dev emacs24 git git-doc git-email ri tmux zsh python-gpgme gparted vlc filezilla p7zip qbittorrent synaptic ubuntu-restricted-extras openjdk-8-jdk volumeicon-alsa xbacklight i3 ruby-ronn acpi
 
 git clone git://github.com/vivien/i3blocks
 cd i3blocks && make clean all && sudo make install
