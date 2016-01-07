@@ -189,7 +189,9 @@ exec gnome-sound-applet
 exec synergy
 exec /home/local/ANT/ndscott/.correct-monitors.sh
 exec --no-startup-id nm-applet
-exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id volumeicon
+exec --no-startup-id orage
 exec --no-startup-id "feh --bg-fill /home/local/ANT/ndscott/wallpaper/NMSConceptArtWallpap.png"
 exec xautolock -time 10 -locker 'i3lock -c 004354 -f' &
 
@@ -205,3 +207,5 @@ bindsym XF86AudioMute exec amixer -c 1 set Master 0 #mute sound volume
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+for_window [title="Orage"] floating enable;
