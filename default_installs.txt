@@ -5,8 +5,8 @@ sudo apt-get install ruby ruby-dev gcc python python-dev emacs24 git git-doc git
 
 git clone git://github.com/vivien/i3blocks
 cd i3blocks && make clean all && sudo make install
-mkdir ~/.i3blockscripts
-cp ~/i3blocks/scripts/* ~/.i3blockscripts/
+mkdir ~/.config/i3blocks
+cp ~/i3blocks/scripts/* ~/.config/i3blocks/
 rm -rf ~/i3blocks
 
 wget https://raw.github.com/technomancy/leiningen/stable/bin/lein
