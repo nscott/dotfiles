@@ -1,7 +1,7 @@
 mkdir ~/bin
 
 # ruby-ronn required for i3blocks
-sudo apt-get install ruby ruby-dev gcc python python-dev emacs24 git git-doc git-email ri tmux python-gpgme gparted vlc filezilla p7zip qbittorrent synaptic ubuntu-restricted-extras openjdk-8-jdk volumeicon-alsa xbacklight i3 ruby-ronn
+sudo apt-get install ruby ruby-dev gcc python python-dev emacs24 git git-doc git-email ri tmux zsh python-gpgme gparted vlc filezilla p7zip qbittorrent synaptic ubuntu-restricted-extras openjdk-8-jdk volumeicon-alsa xbacklight i3 ruby-ronn
 
 git clone git://github.com/vivien/i3blocks
 cd i3blocks && make clean all && sudo make install
@@ -10,6 +10,9 @@ wget https://raw.github.com/technomancy/leiningen/stable/bin/lein
 mv lein ~/bin/lein
 chmod +x ~/bin/lein
 ~/bin/lein
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s /bin/zsh
 
 mkdir ~/.fonts
 cp ./fonts/* ~/.fonts
