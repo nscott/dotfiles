@@ -12,3 +12,5 @@
 
 [push]
 	default = upstream #pushes only the local branch
+[core]
+	excludesfile = ~/.gitignore
