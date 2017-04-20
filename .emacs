@@ -10,6 +10,7 @@
    (quote
     ("fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" default)))
  '(inhibit-startup-screen t)
+ '(markdown-command "/usr/local/bin/pandoc -f markdown_github -t html5")
  '(package-selected-packages
    (quote
     (markdown-mode org-plus-contrib unicode-fonts web-mode cider coffee-mode php-mode clojure-mode flx-ido flx projectile)))
@@ -40,7 +41,7 @@
 			(require package)))
 	'(projectile flx flx-ido
 	  clojure-mode php-mode coffee-mode
-	  cider web-mode unicode-fonts markdown-mode))
+	  cider web-mode unicode-fonts markdown-mode yaml-mode json-mode json-reformat))
 
 ; (load-theme 'solarized-dark t)
 (setq show-trailing-whitespace 1)
